@@ -1,1 +1,160 @@
 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title> Plateforme </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-div">
+            <p class="logo">Plateforme<span class="logo-span">.</span></p>
+        </div>
+
+        <ul>
+            <li><a href="#formation">Accueil</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Consultants</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- Bouton menu general -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="btn-header">
+            <button class="btn">
+                <span>Prendre un rendez-vous</span>
+            </button>
+        </div>
+
+    </header>
+    <section class="home-section">
+        <div class="left">
+            <img class="left-image-1" src="image/consultation.png" alt="consultation">
+        </div>
+        <div class="right">
+            <div>
+                <span class="text-right">Besoin d’un accompagnement rapide et efficace ?</span>
+                <h1> Obtenez des réponses précises et rapides à vos questions !</h1>
+                <p>
+                    Notre plateforme vous accompagne dans trois domaines essentiels : la formation, le management &
+                    conseil, et la psychologie.
+                    <br><br>
+                    Une question ? Un doute ? Nous sommes là pour vous guider.<br><br>
+                    👉 Posez votre question dès maintenant !
+                </p>
+                <div>
+                    <button class="btn-right">Prendre un rendez vous</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <div class="formation">
+            <div class="left">
+                <h1 class="title">
+                    <p class="small-desc">Formation : Développez vos compétences et accédez aux meilleures opportunités
+                    </p>
+                </h1><br><br>
+                <p>Vous souhaitez évoluer professionnellement ou acquérir de nouvelles compétences ? Nos formations vous
+                    offrent un apprentissage adapté aux exigences du marché du travail. Que ce soit pour un premier
+                    emploi,
+                    une reconversion ou une montée en compétences, nous vous accompagnons à chaque étape.
+                    <br><br>
+                    📌 Nos formations couvrent : <br>
+                    ✔️ Des cursus spécialisés pour accéder à divers postes <br>
+                    ✔️ Des modules adaptés aux besoins actuels du marché <br>
+                    ✔️ Un accompagnement personnalisé pour maximiser votre réussite <br>
+                    <br><br>
+                    🚀 Boostez votre carrière avec nos formations !
+                </p>
+            </div>
+            <div class="right">
+                <img class="formation-img" src="image/formation2.png" alt="formation">
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <div class="management">
+
+            <div class="left">
+                <img class="management-img" src="image/management.png" alt="management">
+            </div>
+            <div class="right">
+                <h1 class="title">
+                    <p class="small-desc">Management & Conseil : Maîtrisez les enjeux du monde professionnel
+                    </p>
+                </h1><br><br>
+                <p>Naviguer dans le monde du travail peut être complexe. Nos experts en management et conseil vous
+                    aident à comprendre vos droits, à optimiser votre stratégie d’entreprise et à améliorer votre
+                    communication interne.
+                    <br><br>
+                    📌 Nos domaines d’expertise : <br>
+                    ✔️ Recrutement, gestion de la paie et droit du travail <br>
+                    ✔️ Stratégie et développement des entreprises <br>
+                    ✔️ Communication et dialogue social <br>
+                    <br><br>
+                    🎯 Prenez des décisions éclairées et optimisez votre gestion professionnelle !
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <div class="psychologie">
+            <div class="left">
+                <h1 class="title">
+                    <p class="small-desc">Psychologie Générale : Un accompagnement pour votre bien-être
+                    </p>
+                </h1><br><br>
+                <p>Les défis de la vie quotidienne, scolaire ou professionnelle peuvent être éprouvants. Nos
+                    psychologues vous offrent un soutien personnalisé pour mieux gérer vos émotions et trouver des
+                    solutions adaptées.
+                    <br><br>
+                    📌 Nous vous aidons sur : <br>
+                    ✔️ Les difficultés scolaires et d’apprentissage <br>
+                    ✔️ La gestion du stress et des émotions <br>
+                    ✔️ L’accompagnement psychosocial sur différents sujets <br>
+                    <br><br>
+                    🌿 Prenez soin de votre bien-être mental avec un accompagnement bienveillant !
+                </p>
+            </div>
+            <div class="right">
+                <img class="formation-img" src="image/psychologie.png" alt="psychologie">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="logo-div">
+            <p class="logo">Plateforme<span class="logo-span">.</span></p>
+        </div>
+        <p class="right-footer"><span>&copy; 2025</span></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const menu = document.querySelector("ul");
+
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("active");
+
+                // Modifier le texte du toggle pour afficher "✖" quand le menu est ouvert
+                if (menu.classList.contains("active")) {
+                    menuToggle.innerHTML = "✖"; // Icône de fermeture
+                } else {
+                    menuToggle.innerHTML = "☰"; // Icône de menu burger
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
